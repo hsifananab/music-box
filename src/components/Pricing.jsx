@@ -3,7 +3,7 @@ import { subscriptions } from '../data/data';
 
 const Pricing = () => {
   return (
-    <div className="mt-[100px]">
+    <div className="my-[100px]">
       <div className="container m-auto">
         <div className="flex flex-col items-center">
           <h2 className="uppercase text-[38px] leading-[150%] font-bold mb-12">

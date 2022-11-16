@@ -3,7 +3,7 @@ import { news } from '../data/data';
 
 const News = () => {
   return (
-    <div className="mt-[100px]">
+    <div className="my-[100px]">
       <div className="container m-auto">
         <div className="flex flex-col items-center">
           <h2 className="uppercase text-[38px] leading-[150%] font-bold mb-12">
@@ -12,9 +12,9 @@ const News = () => {
           <div className="flex flex-col gap-[65px]">
             {news.map((item, index) =>
               index % 2 === 0 ? (
-                <NewsItem item={item} />
+                <NewsItem item={item} key={item.title} />
               ) : (
-                <NewsItem item={item} reverse={true} />
+                <NewsItem item={item} reverse={true} key={item.title} />
               )
             )}
           </div>
