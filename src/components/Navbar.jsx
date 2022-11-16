@@ -5,7 +5,7 @@ const Navbar = () => {
   const links = ['Главная', 'Каталог', 'Исполнители', 'Контакты'];
 
   return (
-    <div className="fixed w-full">
+    <div className="absolute w-full">
       <div className="container m-auto">
         <div className=" text-white flex items-center justify-start mt-[25px]">
           <div className="logo flex gap-4 mr-[88px]">
