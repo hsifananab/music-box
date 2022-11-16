@@ -4,9 +4,9 @@ import { news } from '../data/data';
 const News = () => {
   return (
     <div className="my-[100px]">
-      <div className="container m-auto">
+      <div className="container px-[20px] xl:px-0 m-auto">
         <div className="flex flex-col items-center">
-          <h2 className="uppercase text-[38px] leading-[150%] font-bold mb-12">
+          <h2 className="uppercase sm:text-[38px] text-[18px] leading-[150%] font-bold mb-12">
             Последние новости
           </h2>
           <div className="flex flex-col gap-[65px]">
@@ -27,10 +27,12 @@ const News = () => {
 export default News;
 
 const NewsItem = ({ item, reverse }) => {
+  const newsItemClass = 'flex gap-[50px] flex-col lg:flex-row';
+  const reverseClass = 'lg:flex-row-reverse';
+
   return (
     <div
-      className="flex gap-[50px] "
-      style={{ flexDirection: reverse ? 'row-reverse' : 'row' }}
+      className={reverse ? newsItemClass + ' ' + reverseClass : newsItemClass}
     >
       <img src={item.image} className="flex-1" alt="" />
       <div className="flex-1">

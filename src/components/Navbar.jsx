@@ -6,17 +6,17 @@ const Navbar = () => {
 
   return (
     <div className="absolute w-full">
-      <div className="container m-auto">
-        <div className=" text-white flex items-center justify-start mt-[25px]">
-          <div className="logo flex gap-4 mr-[88px]">
-            <img src={Logo} alt="logo-icon" />
-            <p>Music Box</p>
+      <div className="container px-[20px] xl:px-0 m-auto">
+        <div className="text-white flex flex-col sm:flex-row sm:items-center justify-start mt-[25px] gap-[18px]">
+          <div className="logo flex gap-4 mr-[88px] items-center">
+            <img className="w-4 sm:w-6" src={Logo} alt="logo-icon" />
+            <p className="text-[11px] sm:text-[13px] uppercase">Music Box</p>
           </div>
 
           <nav className="menu">
-            <ul className="flex gap-6">
+            <ul className="flex flex-col sm:flex-row sm:gap-6">
               {links.map(item => (
-                <li className="uppercase" key={item}>
+                <li className="uppercase text-[11px]" key={item}>
                   {item}
                 </li>
               ))}
@@ -28,7 +28,7 @@ const Navbar = () => {
             name="seacrh"
             id="search"
             placeholder="поиск..."
-            className="w-[248px] bg-[#3C3B3D] rounded-[50px] px-[10px] py-[5px] placeholder:uppercase placeholder:text-[#757575] text-white ml-auto"
+            className="sm:max-w-[248px] w-full bg-[#3C3B3D] rounded-[50px] px-[10px] py-[5px] placeholder:uppercase placeholder:text-[#757575] text-white text-[13.3px] sm:ml-auto"
           />
         </div>
       </div>

@@ -2,13 +2,13 @@ import React from 'react';
 
 const Intro = () => {
   return (
-    <div className="w-ful h-screen bg-cover m-auto bg-intro-pattern">
-      <div className="container m-auto ">
-        <div className="flex h-screen flex-col items-center justify-center text-white">
-          <h1 className="text-6xl font-bold uppercase leading-[150%]">
+    <div className="w-ful h-screen bg-cover m-auto bg-intro-pattern pt-[78px] sm:pt-0">
+      <div className="container px-[20px] xl:px-0 m-auto ">
+        <div className="flex h-screen flex-col items-center justify-center text-white text-center">
+          <h1 className="sm:text-6xl text-[30px]  font-bold uppercase leading-[150%]">
             Онлайн музыка где угодно
           </h1>
-          <p className="text-[38px] font-bold uppercase leading-[150%] mb-8">
+          <p className="sm:text-[38px] text-[18px] font-bold uppercase leading-[150%] sm:mb-8 mb-4">
             Без ограничений
           </p>
           <p className="leading-[150%] mb-4">
@@ -27,7 +27,7 @@ export default Intro;
 
 const IntroForm = () => {
   return (
-    <form className="grid grid-col-2 gap-6 w-full max-w-[570px]">
+    <form className="sm:grid flex flex-col grid-col-2 gap-6 w-full max-w-[570px]">
       <input
         className="border-2 bg-transparent border-[#CACACA] rounded-[3px] font-bold py-4 text-white placeholder:text-white text-sm pl-[22px]"
         type="text"

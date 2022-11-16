@@ -4,12 +4,12 @@ import Iphone from '../assets/icons/iphone.png';
 const MobileApp = () => {
   return (
     <div className="my-[100px]">
-      <div className="container m-auto">
+      <div className="container px-[20px] xl:px-0 m-auto">
         <div className="flex flex-col items-center">
-          <h2 className="uppercase text-[38px] leading-[150%] font-bold mb-12">
+          <h2 className="uppercase sm:text-[38px] text-[18px] leading-[150%] font-bold mb-12">
             Мобильное приложение
           </h2>
-          <div className="w-full flex gap-[144px]">
+          <div className="w-full flex flex-col-reverse md:flex-row md:gap-[144px]  gap-4">
             <div className="pt-4 max-w-[600px]">
               <p className="text-[#CACACA] mb-4">
                 Воспользуйтесь нашим мобильным приложением. Оно позволит слушать
@@ -24,7 +24,7 @@ const MobileApp = () => {
                 Скачать
               </button>
             </div>
-            <div className="">
+            <div className="flex items-center justify-center">
               <img src={Iphone} alt="" />
             </div>
           </div>

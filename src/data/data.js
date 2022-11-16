@@ -1,3 +1,8 @@
+import { GrGooglePlus } from 'react-icons/gr';
+import { GrTwitter } from 'react-icons/gr';
+import { GrFacebookOption } from 'react-icons/gr';
+import { GrInstagram } from 'react-icons/gr';
+
 export const subscriptions = [
   {
     title: 'Бесплатная',
@@ -39,5 +44,88 @@ export const news = [
       name: 'MUSIC BOX',
       date: 1582502400000,
     },
+  },
+];
+
+export const footerlinks = [
+  {
+    title: 'О нас',
+    links: [
+      {
+        label: 'История компании',
+        link: '#',
+      },
+      {
+        label: 'Карьера',
+        link: '#',
+      },
+      {
+        label: 'Особенности',
+        link: '#',
+      },
+      {
+        label: 'Пресса',
+        link: '#',
+      },
+    ],
+  },
+  {
+    title: 'Поддержка',
+    links: [
+      {
+        label: 'База знаний',
+        link: '#',
+      },
+      {
+        label: 'Тарифы',
+        link: '#',
+      },
+      {
+        label: 'Мобильное приложение',
+        link: '#',
+      },
+      {
+        label: 'Условия использования',
+        link: '#',
+      },
+    ],
+  },
+  {
+    title: 'Контакты',
+    links: [
+      {
+        label: 'hello@music.box',
+        link: '#',
+      },
+      {
+        label: 'Russia, Moscow. Music Box studio',
+        link: '#',
+      },
+      {
+        label: '',
+        link: '#',
+      },
+    ],
+  },
+  {
+    title: 'Подписывайтесь',
+    links: [
+      {
+        label: <GrGooglePlus />,
+        link: '#',
+      },
+      {
+        label: <GrTwitter />,
+        link: '#',
+      },
+      {
+        label: <GrFacebookOption />,
+        link: '#',
+      },
+      {
+        label: <GrInstagram />,
+        link: '#',
+      },
+    ],
   },
 ];
