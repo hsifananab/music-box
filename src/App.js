@@ -1,4 +1,5 @@
 import React from 'react';
+import Footer from './components/Footer';
 import Intro from './components/Intro';
 import MobileApp from './components/MobileApp';
 import Navbar from './components/Navbar';
@@ -13,6 +14,7 @@ const App = () => {
       <Pricing />
       <News />
       <MobileApp />
+      <Footer />
     </>
   );
 };
